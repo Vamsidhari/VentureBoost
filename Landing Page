@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentureBoost App</title>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #0047AB; /* Blue theme */
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 1em;
+        }
+        header ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        #hero, #network, #funding {
+            text-align: center;
+            padding: 4em 1em;
+            background: #E3F2FD; /* Light blue background */
+        }
+        #hero h1, #network h2, #funding h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        #hero p, #network p, #funding p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        #hero .cta-button {
+            padding: 0.7em 2em;
+            background: #0047AB;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        #features {
+            padding: 2em 1em;
+            text-align: center;
+        }
+        .features-container {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+        .feature {
+            width: 200px;
+            text-align: center;
+        }
+        .feature i {
+            font-size: 3em;
+            color: #0047AB; /* Blue icon color */
+            margin-bottom: 0.5em;
+        }
+        #join {
+            text-align: center;
+            padding: 4em 1em;
+            background: #E3F2FD; /* Light blue background */
+        }
+        #join h2 {
+            font-size: 2em;
+            margin-bottom: 1em;
+        }
+        #join form {
+            margin-top: 2em;
+        }
+        #join input[type="text"], #join input[type="email"], #join input[type="tel"] {
+            padding: 0.7em;
+            width: 80%;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #join button {
+            padding: 0.7em 2em;
+            background: #0047AB;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background: #0047AB;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">VentureBoost</div>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#network">Networking</a></li>
+            <li><a href="#funding">Funding</a></li>
+            <li><a href="#join">Join</a></li>
+        </ul>
+    </header>
+    <section id="hero">
+        <h1>Empower Your Start-up Journey</h1>
+        <p>Sign up to tap into all of the resources that entrepreneurs need to navigate their way to success.</p>
+        <a href="#join" class="cta-button">Join Our Waitlist</a>
+    </section>
+    <section id="features">
+        <h2>Features</h2>
+        <div class="features-container">
+            <div class="feature">
+                <i class="fas fa-rocket"></i>
+                <h3>Startup Guidance</h3>
+                <p>Step-by-step resources to kickstart your entrepreneurial journey.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Innovative Ideas</h3>
+                <p>Discover and refine groundbreaking ideas for your business.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-chart-line"></i>
+                <h3>Accelerated Growth</h3>
+                <p>Tools and tips to help your start-up scale faster.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Networking</h3>
+                <p>Attend networking events and connect with entrepreneurs.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Funding</h3>
+                <p>Gain access to the right resources for all of your funding needs.</p>
+            </div>
+        </div>
+    </section>
+    <section id="network">
+        <h2>Networking Opportunities</h2>
+        <p>Join our waitlist so that we can let you know when there are exciting networking opportunities for you.</p>
+    </section>
+    <section id="funding">
+        <h2>Funding Opportunities</h2>
+        <p>Join our waitlist so that we can let you know when we can connect you with all the funding you need.</p>
+    </section>
+    <section id="join">
+        <h2>Join Our Waitlist</h2>
+        <p>Be among the first to access all the tools and support you need for your startup.</p>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number (optional)">
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 VentureBoost. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
